@@ -9202,3 +9202,6 @@ textarea.form-control {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover {
+  color: #f86f2d;
+}
