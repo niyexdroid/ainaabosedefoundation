@@ -56,7 +56,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Commissioner', "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -3253,7 +3253,7 @@ input[type="button"].btn-block {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.5rem 1rem; }
+  padding: 0.2rem 1rem; }
   .navbar > .container,
   .navbar > .container-fluid {
     display: -webkit-box;
@@ -6172,7 +6172,7 @@ button.bg-dark:focus {
 
 .mb-4,
 .my-4 {
-  margin-bottom: 1.5rem !important; }
+  margin-bottom: 0.2rem !important; }
 
 .ml-4,
 .mx-4 {
@@ -6183,7 +6183,7 @@ button.bg-dark:focus {
 
 .mt-5,
 .my-5 {
-  margin-top: 3rem !important; }
+  margin-top: 1rem !important; }
 
 .mr-5,
 .mx-5 {
@@ -6191,7 +6191,7 @@ button.bg-dark:focus {
 
 .mb-5,
 .my-5 {
-  margin-bottom: 3rem !important; }
+  margin-bottom: 2rem !important; }
 
 .ml-5,
 .mx-5 {
@@ -6240,7 +6240,7 @@ button.bg-dark:focus {
 
 .pt-2,
 .py-2 {
-  padding-top: 0.5rem !important; }
+  padding-top: 0 ; }
 
 .pr-2,
 .px-2 {
@@ -6248,7 +6248,7 @@ button.bg-dark:focus {
 
 .pb-2,
 .py-2 {
-  padding-bottom: 0.5rem !important; }
+  padding-bottom: 0 ; }
 
 .pl-2,
 .px-2 {
@@ -6286,7 +6286,7 @@ button.bg-dark:focus {
 
 .pb-4,
 .py-4 {
-  padding-bottom: 1.5rem !important; }
+  padding-bottom: 0 !important; }
 
 .pl-4,
 .px-4 {
@@ -6328,7 +6328,10 @@ button.bg-dark:focus {
 
 .ml-auto,
 .mx-auto {
-  margin-left: auto !important; }
+  margin-left: auto !important; 
+  text-align: center;
+}
+
 
 @media (min-width: 576px) {
   .m-sm-0 {
@@ -7328,10 +7331,16 @@ h1, h2, h3, h4, h5,
     padding-left: 20px;
     padding-right: 20px;
     color: rgba(255, 255, 255, 0.8);
-    font-weight: 400;
+    font-weight: 600;
     opacity: 1 !important; }
+    @media (max-width: 767.98px) {
+      .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
+        padding-top: 0;
+        padding-bottom: 10px;
+      }
+    }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #fff; }
+      color: #f86f2d; }
   .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
     border: none;
     background: #fff;
@@ -7430,7 +7439,11 @@ h1, h2, h3, h4, h5,
       .ftco-navbar-light.scrolled .navbar-nav {
         background: none;
         padding-left: 0 !important;
-        padding-right: 0 !important; } }
+        padding-right: 0 !important; }
+        .center{
+          text-align: center;
+        }
+      }
     .ftco-navbar-light.scrolled .navbar-toggler {
       border: none;
       color: rgba(255, 255, 255, 0.9) !important;
@@ -7504,7 +7517,12 @@ h1, h2, h3, h4, h5,
     font-weight: 400; }
     @media (max-width: 991.98px) {
       .slider-text h1 {
-        font-size: 60px; } }
+        font-size: 40px;
+      }
+      /* .container .slider-text {
+        padding-top: 0px; 
+      } */
+    }
   .slider-text h2 {
     font-size: 50px;
     line-height: 1.5;
@@ -8276,18 +8294,18 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 4em 0 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      padding: 2em 0; } }
 
 .ftco-bg-dark {
   background: #3c312e; }
 
 .ftco-footer {
   font-size: 16px;
-  padding: 7em 0;
+  padding: 4em 0 0;
   background: #514538; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
@@ -8309,6 +8327,11 @@ textarea.form-control {
       width: 70px;
       height: 1px;
       background: #fff; }
+      @media (max-width: 767.98px) {
+        .ftco-footer .ftco-footer-widget h2:after {
+          width: 100%;
+        }
+      }
   .ftco-footer .ftco-footer-widget ul li a span {
     color: #fff; }
   .ftco-footer .ftco-footer-widget .btn-primary {
@@ -8567,7 +8590,7 @@ textarea.form-control {
   .block-23 ul li, .block-23 ul li > a {
     display: table;
     line-height: 1.5;
-    margin-bottom: 15px; }
+    margin-bottom: 8px; }
   .block-23 ul li span {
     color: rgba(255, 255, 255, 0.9); }
   .block-23 ul li .icon, .block-23 ul li .text {
@@ -8580,7 +8603,7 @@ textarea.form-control {
     color: #fff; }
 
 .block-6 {
-  margin-bottom: 40px; }
+  margin-bottom: 0px; }
   .block-6 .media-body p {
     font-size: 16px; }
 
@@ -9169,3 +9192,13 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+.flaticon-charity{
+  transform: rotate(270deg);
+}
+.heading-section p {
+  font-size: 25px;
+}
+.pad {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
